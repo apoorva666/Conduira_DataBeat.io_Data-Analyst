@@ -1,2 +1,4 @@
 # Conduira_DataBeat.io_Data-Analyst
-Data Beat Assignment- Data Analyst role
+Data Beat Assignment- Data Analyst role using .Net
+
+Bubble Sort algorithm
