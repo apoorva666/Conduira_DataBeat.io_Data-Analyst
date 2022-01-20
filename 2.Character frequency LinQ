@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+ 
+class char_cnt
+{
+    static void Main(string[] args)
+    {
+      string str_input; 
+            Console.Write("Enter the string");
+            str_input= Console.ReadLine();
+            Console.Write("\n");
+        
+            var str_freq = from i in str_input  
+                    group i by i into j  
+                    select j;  
+                Console.Write("The frequency of the characters are :\n");
+                foreach(var ArrEle in str_freq)  
+                    {  
+                    Console.WriteLine("Character "+ArrEle.Key + " appears " + ArrEle.Count()+" times");  
+                    }  
+    }
+}
