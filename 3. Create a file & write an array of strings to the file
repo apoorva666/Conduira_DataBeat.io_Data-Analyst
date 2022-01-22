@@ -1,0 +1,20 @@
+using System.IO;
+using System;
+public class String_arr_pgm {
+   public static void Main() {
+      string[] string_arr = new string[] 
+      {
+      "DataBeat",
+      "Data Analyst",
+      "Assignment",
+      };
+      File.WriteAllLines("file_str.txt", string_arr);  
+      using (StreamReader str_rd = new StreamReader("file_str.txt")) 
+      {
+         string str_output = str_rd.ReadToEnd();
+         Console.WriteLine(str_output);
+      }
+   }
+}
+
+
